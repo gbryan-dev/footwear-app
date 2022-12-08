@@ -32,13 +32,13 @@ function App() {
         <button className="shopnow forphone">
           <i className="fa-solid fa-magnifying-glass"></i> MARKETPLACE
         </button>
+      </div>
 
-        <Categories />
+      <Categories />
 
-        <div className="reviews">
-          {/* <img src={require("./IMAGES/REVIEWS/REVIEWS.png")} />
+      <div className="reviews">
+        {/* <img src={require("./IMAGES/REVIEWS/REVIEWS.png")} />
           <img src={require("./IMAGES/REVIEWS/REVIEWS.png")} /> */}
-        </div>
       </div>
     </>
   );
