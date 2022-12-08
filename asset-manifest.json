@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/footwear-app/static/css/main.e117d3b4.css",
+    "main.css": "/footwear-app/static/css/main.6ba3bd9e.css",
     "main.js": "/footwear-app/static/js/main.13bbe499.js",
     "static/js/787.66672725.chunk.js": "/footwear-app/static/js/787.66672725.chunk.js",
     "static/media/FORMEN.png": "/footwear-app/static/media/FORMEN.347795dba7318124babe.png",
@@ -14,12 +14,12 @@
     "static/media/Pair1.png": "/footwear-app/static/media/Pair1.c389660171c0c64df592.png",
     "static/media/Pair2.png": "/footwear-app/static/media/Pair2.3b922f7d3553dcaa7223.png",
     "index.html": "/footwear-app/index.html",
-    "main.e117d3b4.css.map": "/footwear-app/static/css/main.e117d3b4.css.map",
+    "main.6ba3bd9e.css.map": "/footwear-app/static/css/main.6ba3bd9e.css.map",
     "main.13bbe499.js.map": "/footwear-app/static/js/main.13bbe499.js.map",
     "787.66672725.chunk.js.map": "/footwear-app/static/js/787.66672725.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e117d3b4.css",
+    "static/css/main.6ba3bd9e.css",
     "static/js/main.13bbe499.js"
   ]
 }
