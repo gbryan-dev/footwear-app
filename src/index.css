@@ -1,0 +1,438 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  user-select: none;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+.back {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -5555;
+  background-image: url(./IMAGES/BANNER/back3.png);
+}
+
+.back:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  z-index: 1;
+}
+
+.front {
+  margin: 0px;
+  z-index: 99;
+}
+
+section {
+  margin: auto;
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  color: white;
+}
+
+.section1 {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+
+  height: 500px;
+}
+
+.section1 span {
+  font-family: "Poppins";
+}
+
+.left {
+  margin: auto;
+  height: 100%;
+  width: 50%;
+  font-family: "Poppins";
+  padding-left: 40px;
+  padding-right: 20px;
+}
+
+.shopnow {
+  margin: 10px auto;
+  height: auto;
+  padding: 10px 50px;
+  font-weight: "Inter";
+  border-radius: 20px;
+  cursor: pointer;
+  width: auto;
+  background-color: black;
+  font-weight: 900;
+  color: white;
+  border: 2px solid #31ff66;
+  box-shadow: 0px 0px 10px #31ff66;
+  position: relative;
+}
+
+.left span {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.left p {
+  margin-top: -10px;
+  font-size: 20px;
+}
+
+.left span:nth-child(1) {
+  font-size: 30px;
+  font-weight: 800;
+  margin-top: 90px;
+}
+.left span:nth-child(2),
+.left span:nth-child(3) {
+  font-size: 100px;
+  font-weight: 800;
+  background: -webkit-linear-gradient(150deg, #08aeea, #08f560);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-style: normal;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+.left span:nth-child(2) {
+  margin-top: -30px;
+}
+.left span:nth-child(3) {
+  margin-top: -60px;
+}
+
+.right {
+  margin: 50px auto;
+  height: 100%;
+  width: 50%;
+  position: relative;
+}
+
+.right img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 90%;
+
+  opacity: 0;
+  animation-name: fade;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  11.11% {
+    opacity: 1;
+  }
+  33.33% {
+    opacity: 1;
+  }
+  44.44% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.right img:nth-child(1) {
+  animation-delay: 0s;
+}
+.right img:nth-child(2) {
+  animation-delay: 3s;
+}
+.right img:nth-child(3) {
+  animation-delay: 6s;
+}
+
+.section2 {
+  height: 500px;
+}
+
+.categories {
+  margin-top: 100px;
+  height: 150px;
+  width: 100%;
+  padding-top: 90px;
+}
+
+.categories img {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.text {
+  margin: 0px auto;
+  text-align: center;
+  font-family: "Poppins";
+  font-weight: 300;
+  width: auto;
+  color: white;
+  font-size: 30px;
+  font-style: normal;
+  letter-spacing: 3px;
+  position: relative;
+}
+
+.text:before {
+  content: "";
+  height: 10px;
+  width: 100px;
+  background-color: #31ff66;
+  position: absolute;
+  left: 50%;
+  bottom: -8px;
+  transform: translate(-50%, 0px);
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px #31ff66;
+}
+
+.reviews {
+  margin: auto;
+  height: 500px;
+  width: 100%;
+  position: relative;
+  background-color: white;
+}
+
+.itemFlex {
+  margin: 100px auto;
+  display: flex;
+  margin-bottom: 0px;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.itemCon {
+  margin: 10px 30px;
+  margin-bottom: 100px;
+  height: 180px;
+  width: 300px;
+  border-radius: 10px;
+  position: relative;
+  background-color: #18191a;
+}
+
+.itemCon button {
+  position: absolute;
+  left: 50%;
+  bottom: 15px;
+  outline: none;
+  transform: translate(-50%, 0px);
+  padding: 10px 20px;
+  width: 150px;
+  background-color: #111111;
+  border-radius: 20px;
+  font-family: "Poppins";
+  color: white;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.itemCon button:hover {
+  background-color: #31ff66;
+  color: black;
+  font-weight: 600;
+  border: 2px solid white;
+}
+.itemCon button:hover i {
+  color: black;
+}
+.itemCon button i {
+  color: #31ff66;
+}
+
+.itemCon img {
+  margin: -150px auto;
+  height: 300px;
+  width: 100%;
+}
+
+.bg1 {
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+}
+
+.bg2 {
+  background-color: #08aeea;
+  background-image: linear-gradient(0deg, #08aeea 0%, #2af598 100%);
+}
+
+.bg3 {
+  background-color: #fbda61;
+  background-image: linear-gradient(45deg, #fbda61 0%, #ff5acd 100%);
+}
+
+.bg4 {
+  background-color: #08aeea;
+  background-image: linear-gradient(0deg, #08aeea 0%, #2af598 100%);
+}
+
+.bg5 {
+  background-color: #fbab7e;
+  background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+}
+
+.bg6 {
+  background-color: #00dbde;
+  background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
+}
+
+.bg7 {
+  background-color: #85ffbd;
+  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+}
+
+.bg8 {
+  background-color: #ff9a8b;
+  background-image: linear-gradient(
+    90deg,
+    #ff9a8b 0%,
+    #ff6a88 55%,
+    #ff99ac 100%
+  );
+}
+
+.forPC {
+  display: block inline-block;
+}
+.forphone {
+  display: none;
+}
+
+.marquee {
+  left: 0px;
+  margin-left: -500px;
+  width: 2000px;
+  height: 12rem;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.marquee__inner-wrap {
+  height: 100%;
+  width: 100%;
+}
+
+.marquee span {
+  text-align: center;
+  color: lightgray;
+  font-weight: 400;
+  white-space: nowrap;
+  font-size: max(2vw, 2.4rem);
+  line-height: 1.2;
+  font-weight: 700;
+  padding: 1vh 1vw 0;
+  text-transform: uppercase;
+}
+
+.marquee__img {
+  width: max(8rem, 12vw);
+  height: 8rem;
+  margin: 0 4vw;
+  border-radius: 100rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #444;
+  filter: grayscale(1);
+}
+
+.marquee__inner {
+  height: 100%;
+  width: fit-content;
+  align-items: center;
+  display: flex;
+  position: relative;
+  animation: marquee 25s linear infinite;
+  will-change: transform;
+}
+
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* PHONE */
+@media (max-width: 600px) {
+  .forphone {
+    display: block;
+  }
+  .forPC {
+    display: none;
+  }
+  .section1 {
+    margin-top: -40px;
+    flex-direction: column;
+  }
+  .left {
+    font-style: normal;
+    margin-top: -20px;
+    padding-left: 10px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  .left span:nth-child(2) {
+    margin-top: -20px;
+    font-size: 60px;
+    text-align: center;
+  }
+  .left span:nth-child(3) {
+    margin-top: -35px;
+    font-size: 60px;
+    text-align: center;
+  }
+  .left p {
+    display: none;
+  }
+  .right {
+    margin-top: 30px;
+    width: 80%;
+    height: 700px;
+  }
+  .right img {
+    height: 300px;
+    width: 95%;
+  }
+
+  .categories { margin-top: -20px;}
+}
