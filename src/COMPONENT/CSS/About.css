@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+
+.about { margin: 0px auto;
+margin-bottom: 0px;
+padding-top: 150px;
+height: auto;
+width: 100%;
+max-width: 1200px;
+}
+
+.aboutflex { margin: 0px auto;
+width: 100%;
+height: auto;
+display: flex;
+margin-bottom: 50px;}
+
+.aboutleft {
+    margin: 0px auto;
+    height: auto;
+    width: 40%;
+    position: relative;
+}
+
+.aboutleftimg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: 300px;
+    width: 300px;
+    
+    overflow: hidden;
+}
+
+.aboutleftimg img { position: absolute; left: 0px; top: 0px; height: 100%; width: 100%;}
+.aboutleftimg img:nth-child(1){ z-index: 55; animation: float 6s ease-in-out infinite;}
+.aboutleftimg img:nth-child(2){ animation: aboutanim 20s infinite;
+   }
+
+@keyframes aboutanim {
+    0% { transform: rotate(0deg) scale(1); border-radius: 100%; }
+    50% { transform: rotate(180deg) scale(2);border-radius: 0px;}
+    100% { transform: rotate(0deg) scale(1); border-radius: 100%; }
+}
+
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+.aboutright {
+    margin: 0px auto;
+    height: auto;
+    width: 50%;
+    font-size: 18px;
+    font-weight: 200;
+    color:white;
+}
+
+.aboutright div { margin: 10px auto; font-family: 'Poppins';}
+
+
+
+
+/* PHONE */
+@media (max-width: 600px) {
+    .about { margin-top: 0px; padding-top: 80px;}
+    .aboutflex { padding-top: 10px;}
+    .aboutleft { display: none;}
+    .aboutright { width: 100%; padding: 10px 20px;}
+    #aboutr3, #aboutr2 { display: none;}
+    
+}

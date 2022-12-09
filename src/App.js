@@ -2,11 +2,15 @@ import pair1 from "./IMAGES/BANNER/Pair1.png";
 import pair2 from "./IMAGES/BANNER/Pair2.png";
 import pair3 from "./IMAGES/BANNER/MorePair.png";
 import "./App.css";
-import Categories from "./COMPONENT/Categories";
+// import Categories from "./COMPONENT/Categories";
+import AboutUs from "./COMPONENT/AboutUs";
+import Header from "./COMPONENT/Header";
+import Team from "./COMPONENT/Team";
 
 function App() {
   return (
     <>
+      <Header />
       <div className="back"></div>
       <div className="front">
         <section className="section1">
@@ -15,11 +19,12 @@ function App() {
             <span>PERFECT</span>
             <span>PAIR</span>
             <p>
-              We have the best collections of footwear to meet your needs,
-              appear confidently. Get a special discount for you starting today.
+              Our products are made from the finest materials and designed to
+              provide both comfort and durability. Shop now and find the perfect
+              pair of footwear for your needs!
             </p>
             <button className="shopnow forPC">
-              <i className="fa-solid fa-magnifying-glass"></i> MARKETPLACE
+              <i className="fa-solid fa-magnifying-glass"></i> OUR PRODUCTS
             </button>
           </div>
           <div className="right">
@@ -30,16 +35,12 @@ function App() {
         </section>
 
         <button className="shopnow forphone">
-          <i className="fa-solid fa-magnifying-glass"></i> MARKETPLACE
+          <i className="fa-solid fa-magnifying-glass"></i> OUR PRODUCTS
         </button>
       </div>
 
-      <Categories />
-
-      <div className="reviews">
-        {/* <img src={require("./IMAGES/REVIEWS/REVIEWS.png")} />
-          <img src={require("./IMAGES/REVIEWS/REVIEWS.png")} /> */}
-      </div>
+      <AboutUs className="about" />
+      <Team />
     </>
   );
 }

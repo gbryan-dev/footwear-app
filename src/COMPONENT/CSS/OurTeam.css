@@ -1,0 +1,75 @@
+.ourteam { margin: 0px auto;
+    margin-bottom: 0px;
+    height: auto;
+    width: 100%;
+    max-width: 1200px;
+    }
+
+    
+
+.teamflex { margin: 0px auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;}
+
+.teams { margin: auto;
+height: 400px; width: 45%;
+animation: float 6s ease-in-out infinite;}
+
+.teams img { margin: 0px; height: 100%; width: 100%; }
+
+.whyChooseUs p { margin: auto;
+    text-align: center;
+color:white;
+font-family: 'Poppins';
+font-weight:200;
+width: 50%;
+}
+
+.chooseFlex { margin: 50px auto; display: flex; width: 100%;
+flex-wrap: wrap; justify-content: center; align-items: center; margin-bottom: 500px;}
+
+.choose { margin: 0px auto; max-height: 300px; width: 24%;
+    max-width: 300px; 
+    position: relative;
+    margin-bottom: 40px;
+    background-color: #19181a;}
+
+.vidCenter { margin: auto; height: 300px; width:100%; padding-bottom: 30px; }
+.vidCenter video { margin: 20px auto; height: 100%; width:100%; 
+   }
+
+.vidTitle { position: absolute;
+left: 0px;
+bottom: -5px;
+width: 100%;
+height: 50px;
+color:white;
+padding-top: 10px;
+font-family: 'Poppins';
+font-size: 20px;
+text-align: center;}
+
+
+
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+/* PHONE */
+@media (max-width: 600px) {
+    .teams{ height: 260px; width: 100%;}
+    .choose { width: 90%;}
+    .whyChooseUs p { width:90%; text-align: left;}
+}

@@ -84,7 +84,7 @@ section {
   border-radius: 20px;
   cursor: pointer;
   width: auto;
-  background-color: black;
+  background-color: #111111;
   font-weight: 900;
   color: white;
   border: 2px solid #31ff66;
@@ -131,6 +131,7 @@ section {
   height: 100%;
   width: 50%;
   position: relative;
+  animation: float 6s ease-in-out infinite;
 }
 
 .right img {
@@ -140,12 +141,26 @@ section {
   transform: translate(-50%, -50%);
   width: 80%;
   height: 90%;
-
   opacity: 0;
   animation-name: fade;
   animation-duration: 9s;
   animation-iteration-count: infinite;
 }
+
+
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
 
 @keyframes fade {
   0% {
@@ -179,18 +194,8 @@ section {
   height: 500px;
 }
 
-.categories {
-  margin: 100px auto;
-  height: 150px;
-  width: 100%;
-  padding-top: 90px;
-}
 
-.categories img {
-  margin: auto;
-  width: 100%;
-  height: 100%;
-}
+
 
 .text {
   margin: 0px auto;
@@ -203,6 +208,7 @@ section {
   font-style: normal;
   letter-spacing: 3px;
   position: relative;
+  margin-bottom: 30px;
 }
 
 .text:before {
@@ -218,70 +224,6 @@ section {
   box-shadow: 0px 0px 5px #31ff66;
 }
 
-.reviews {
-  margin: auto;
-  height: 500px;
-  width: 100%;
-  position: relative;
-  background-color: white;
-}
-
-.itemFlex {
-  margin: 100px auto;
-  display: flex;
-  margin-bottom: 0px;
-  flex-wrap: wrap;
-  width: 100%;
-  height: auto;
-  justify-content: center;
-  align-items: center;
-}
-
-.itemCon {
-  margin: 10px 30px;
-  margin-bottom: 100px;
-  height: 180px;
-  width: 300px;
-  border-radius: 10px;
-  position: relative;
-  background-color: #18191a;
-}
-
-.itemCon button {
-  position: absolute;
-  left: 50%;
-  bottom: 15px;
-  border: none;
-  outline: none;
-  transform: translate(-50%, 0px);
-  padding: 10px 20px;
-  width: 150px;
-  background-color: #111111;
-  border-radius: 20px;
-  font-family: "Poppins";
-  color: white;
-  cursor: pointer;
-  transition: 0.1s;
-}
-
-.itemCon button:hover {
-  background-color: #31ff66;
-  color: black;
-  font-weight: 600;
-  border: 2px solid white;
-}
-.itemCon button:hover i {
-  color: black;
-}
-.itemCon button i {
-  color: #31ff66;
-}
-
-.itemCon img {
-  margin: -150px auto;
-  height: 300px;
-  width: 100%;
-}
 
 .bg1 {
   background-color: #4158d0;
@@ -340,62 +282,21 @@ section {
   display: none;
 }
 
-.marquee {
-  left: 0px;
-  margin-left: -500px;
-  width: 2000px;
-  height: 12rem;
-  overflow: hidden;
-  pointer-events: none;
-}
 
-.marquee__inner-wrap {
-  height: 100%;
-  width: 100%;
-}
 
-.marquee span {
-  text-align: center;
-  color: lightgray;
-  font-weight: 400;
-  white-space: nowrap;
-  font-size: max(2vw, 2.4rem);
-  line-height: 1.2;
-  font-weight: 700;
-  padding: 1vh 1vw 0;
-  text-transform: uppercase;
-}
 
-.marquee__img {
-  width: max(8rem, 12vw);
-  height: 8rem;
-  margin: 0 4vw;
-  border-radius: 100rem;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #444;
-  filter: grayscale(1);
-}
 
-.marquee__inner {
-  height: 100%;
-  width: fit-content;
-  align-items: center;
-  display: flex;
-  position: relative;
-  animation: marquee 25s linear infinite;
-  will-change: transform;
-}
 
-@keyframes marquee {
-  to {
-    transform: translateX(-50%);
-  }
-}
+
+
+
+
+
+
 
 /* PHONE */
 @media (max-width: 600px) {
+
   .forphone {
     display: block;
   }
@@ -439,5 +340,5 @@ section {
   }
   .back { height: 580px;}
 
-  .categories { margin-top: 0px;}
+  .textCenter { margin-top: 0px;}
 }
