@@ -1,25 +1,28 @@
 {
   "files": {
-    "main.css": "/footwear-app/static/css/main.6ba3bd9e.css",
-    "main.js": "/footwear-app/static/js/main.13bbe499.js",
+    "main.css": "/footwear-app/static/css/main.d262ac7a.css",
+    "main.js": "/footwear-app/static/js/main.dcedd162.js",
     "static/js/787.66672725.chunk.js": "/footwear-app/static/js/787.66672725.chunk.js",
-    "static/media/FORMEN.png": "/footwear-app/static/media/FORMEN.347795dba7318124babe.png",
-    "static/media/FORWOMEN.png": "/footwear-app/static/media/FORWOMEN.e8daf6e69559c6e003e1.png",
-    "static/media/FLATS.png": "/footwear-app/static/media/FLATS.3bb34c3d7b3fbb245721.png",
-    "static/media/FORBABY.png": "/footwear-app/static/media/FORBABY.6fa867796fb6769826bc.png",
-    "static/media/LEATHER.png": "/footwear-app/static/media/LEATHER.2dca8a32b6811c7c1526.png",
-    "static/media/FORKIDS.png": "/footwear-app/static/media/FORKIDS.f2f7d5cae1ea94a4fb7e.png",
+    "static/media/TeamA.png": "/footwear-app/static/media/TeamA.9a0b63fcb769c6e3357f.png",
+    "static/media/TeamB.png": "/footwear-app/static/media/TeamB.55648f14fa654072d616.png",
+    "static/media/VidA.mp4": "/footwear-app/static/media/VidA.df6a04a0307edc2ac94c.mp4",
+    "static/media/VidC.mp4": "/footwear-app/static/media/VidC.2f68fe1e88af3ee5b03b.mp4",
+    "static/media/VidB.mp4": "/footwear-app/static/media/VidB.c456209776c9dbec5f13.mp4",
     "static/media/back3.png": "/footwear-app/static/media/back3.980fde461ffb2cda90eb.png",
     "static/media/MorePair.png": "/footwear-app/static/media/MorePair.a7aaf4546aa480706862.png",
     "static/media/Pair1.png": "/footwear-app/static/media/Pair1.c389660171c0c64df592.png",
+    "static/media/Logo2.png": "/footwear-app/static/media/Logo2.0260bec31e8709850ea2.png",
     "static/media/Pair2.png": "/footwear-app/static/media/Pair2.3b922f7d3553dcaa7223.png",
+    "static/media/VidD.mp4": "/footwear-app/static/media/VidD.8b355f939c905709534c.mp4",
+    "static/media/forAbout.png": "/footwear-app/static/media/forAbout.df17777150f7cab73973.png",
+    "static/media/Aboutbg.png": "/footwear-app/static/media/Aboutbg.384dd2bcf09d2f0450e3.png",
     "index.html": "/footwear-app/index.html",
-    "main.6ba3bd9e.css.map": "/footwear-app/static/css/main.6ba3bd9e.css.map",
-    "main.13bbe499.js.map": "/footwear-app/static/js/main.13bbe499.js.map",
+    "main.d262ac7a.css.map": "/footwear-app/static/css/main.d262ac7a.css.map",
+    "main.dcedd162.js.map": "/footwear-app/static/js/main.dcedd162.js.map",
     "787.66672725.chunk.js.map": "/footwear-app/static/js/787.66672725.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6ba3bd9e.css",
-    "static/js/main.13bbe499.js"
+    "static/css/main.d262ac7a.css",
+    "static/js/main.dcedd162.js"
   ]
 }
