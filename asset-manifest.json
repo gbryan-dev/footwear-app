@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/footwear-app/static/css/main.d262ac7a.css",
-    "main.js": "/footwear-app/static/js/main.dcedd162.js",
+    "main.css": "/footwear-app/static/css/main.8ef92cef.css",
+    "main.js": "/footwear-app/static/js/main.23f25884.js",
     "static/js/787.66672725.chunk.js": "/footwear-app/static/js/787.66672725.chunk.js",
     "static/media/TeamA.png": "/footwear-app/static/media/TeamA.9a0b63fcb769c6e3357f.png",
     "static/media/TeamB.png": "/footwear-app/static/media/TeamB.55648f14fa654072d616.png",
@@ -16,13 +16,14 @@
     "static/media/VidD.mp4": "/footwear-app/static/media/VidD.8b355f939c905709534c.mp4",
     "static/media/forAbout.png": "/footwear-app/static/media/forAbout.df17777150f7cab73973.png",
     "static/media/Aboutbg.png": "/footwear-app/static/media/Aboutbg.384dd2bcf09d2f0450e3.png",
+    "static/media/Partners.png": "/footwear-app/static/media/Partners.3d0a5872813dc6b4f830.png",
     "index.html": "/footwear-app/index.html",
-    "main.d262ac7a.css.map": "/footwear-app/static/css/main.d262ac7a.css.map",
-    "main.dcedd162.js.map": "/footwear-app/static/js/main.dcedd162.js.map",
+    "main.8ef92cef.css.map": "/footwear-app/static/css/main.8ef92cef.css.map",
+    "main.23f25884.js.map": "/footwear-app/static/js/main.23f25884.js.map",
     "787.66672725.chunk.js.map": "/footwear-app/static/js/787.66672725.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d262ac7a.css",
-    "static/js/main.dcedd162.js"
+    "static/css/main.8ef92cef.css",
+    "static/js/main.23f25884.js"
   ]
 }
