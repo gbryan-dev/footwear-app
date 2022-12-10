@@ -6,6 +6,7 @@ import "./App.css";
 import AboutUs from "./COMPONENT/AboutUs";
 import Header from "./COMPONENT/Header";
 import Team from "./COMPONENT/Team";
+import Footer from "./COMPONENT/Footer";
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
 
       <AboutUs className="about" />
       <Team />
+      <Footer />
     </>
   );
 }

@@ -57,6 +57,8 @@ margin-bottom: 50px;}
 	}
 }
 
+
+
 .aboutright {
     margin: 0px auto;
     height: auto;
@@ -71,12 +73,15 @@ margin-bottom: 50px;}
 
 
 
+
+
 /* PHONE */
 @media (max-width: 600px) {
     .about { margin-top: 0px; padding-top: 80px;}
-    .aboutflex { padding-top: 10px;}
+    .aboutflex { padding-top: 0px; margin-top: -10px;}
     .aboutleft { display: none;}
-    .aboutright { width: 100%; padding: 10px 20px;}
+    .aboutright { width: 100%; padding: 0px 20px;}
     #aboutr3, #aboutr2 { display: none;}
+    
     
 }

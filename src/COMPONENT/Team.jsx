@@ -45,6 +45,13 @@ const Team = () => {
           ))}
         </div>
       </div>
+
+      <div className="text">Our Partners</div>
+      <section class="partners">
+        <div class="partners-img-container">
+          <div class="partners-img"></div>
+        </div>
+      </section>
     </div>
   );
 };
