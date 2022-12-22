@@ -182,11 +182,181 @@ text-align: center;}
 .partners-img-container .partners-img {
     height: 100%;
     width: 200%;
-    background: transparent url("Partners.png") repeat-x 50% 0;
+    background: transparent url("../IMAGES/Partners.png") repeat-x 50% 0;
     -webkit-animation: slideleft 5000s linear infinite;
     animation: slideleft 5000s linear infinite;
     cursor: grab;
 }
+
+.ContactUS { 
+    margin: 50px auto;
+height: auto;
+width: 100%;
+background-color: #19181a;
+border-radius: 20px;
+box-shadow: 0px 0px 10px #19181a;
+display: flex;
+flex-wrap: wrap;
+padding: 50px;
+}
+
+.ContactLeft {
+    margin: auto;
+    height: 500px;
+    width: 60%;
+    font-family: 'Poppins';
+    
+}
+
+.ContactLeft span { font-size: 30px; font-weight: 500;
+color: white;}
+
+.ContactLeft p { padding-top: 20px; padding-bottom: 0px; 
+    font-size: 20px; color: white; width: 60%;
+font-weight: 200; font-family: 'Inter';}
+
+
+
+.contactsR div { margin-top: 8px;
+margin-bottom: 0px;
+height: 50px;
+border-radius: 10px;
+background:transparent;
+border: 2px solid transparent;
+padding: 10px;
+padding-left: 20px;
+padding-top: 12px;
+font-size: 17px;
+font-family: "Poppins";
+font-weight: 300;
+color:white;
+cursor: pointer;
+transition: .2s;
+}
+
+.contactsR div:hover { 
+    background:rgba(49, 255, 102, .1);
+    border: 2px solid #31ff66;}
+
+.contactsR div i { color: #31ff66; padding-right: 10px;}
+
+.ContactRight {
+    margin: auto;
+    height: 500px;
+    width: 40%;
+    background-color: #111111;
+    border-radius: 20px;
+    position: relative ;
+}
+
+.socMed { margin-top: 60px;
+margin-bottom: 0px;
+margin-left: -20px;
+width: 270px;
+height: auto;
+display: flex;
+flex-wrap: nowrap;
+}
+
+.socMed div { margin: auto;
+height: 60px;
+width: 60px;
+border-radius: 100%;
+background:transparent;
+border: 2px solid transparent;
+position: relative;
+cursor: pointer;
+color:white;
+animation: float 5s infinite;
+transition: .2s;
+}
+
+.socMed div:nth-child(2){
+    animation-delay: .2s;
+}
+
+.socMed div:hover { background:#31ff66;
+    color: #111111;
+    box-shadow: 0px 0px 5px #31ff66;
+    border: 2px solid #111111}
+
+.socMed div i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.contactsR { margin-top: 50px;
+    margin-bottom: 0px;
+    width: 300px;
+    height: auto;
+    }
+
+
+    .ContactRight {
+        margin: auto;
+        height: 500px;
+        width: 40%;
+        background-color: #F2F3F5 ;
+        border-radius: 20px;
+        padding:30px;
+    }
+    .ContactRight div { color: #111111; font-family: 'Inter';
+    font-weight: 500; margin-bottom: 5px;}
+    
+    .contactform {
+        position: relative;
+        display: flex;
+        height: 100%;
+        flex-direction: column;}
+
+    .contactform input, .contactform textarea { 
+        color: #111111;
+        font-family: 'Inter';
+    font-weight: 500;
+        width: 100%; background-color: red;
+    height: 40px;
+    background-color: transparent;
+    border: 1.7px solid rgb(200, 200, 200);
+    padding-left: 10px;
+    padding-top: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+    }
+
+    .contactform textarea { max-height: 140px; min-height: 140px;
+    overflow-y: hidden;
+    }
+
+    .contactform textarea:hover { overflow-y: auto;}
+
+
+    .contactform label { margin-bottom: 20px;}
+
+    .contactform input:focus, .contactform textarea:focus {
+        background:rgba(49, 255, 102, .5);
+        border: 2px solid #111111;
+    }
+
+    .contactform button {  position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 200px;
+    height: 50px;
+    background:#19181a;
+    border: 2px solid #31ff66;
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 500;
+    border-radius: 10px;
+    }
+
+
+
 
 /* PHONE */
 @media (max-width: 600px) {

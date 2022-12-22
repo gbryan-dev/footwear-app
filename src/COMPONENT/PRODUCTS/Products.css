@@ -1,0 +1,28 @@
+.ProductSection {
+    margin: 100px auto;
+margin-bottom: 0px;
+height: auto;
+width: 100%;
+max-width: 1200px;
+}
+
+img { margin: auto; height: 100%; width: 100%;}
+
+.ProdBanner { 
+    margin: 0px auto;
+    height: 400px;
+    width: 100%;
+    background-image: url("./BG/G2.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    
+}

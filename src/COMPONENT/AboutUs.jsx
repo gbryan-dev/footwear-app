@@ -1,17 +1,17 @@
 import React from "react";
 
 import "./CSS/About.css";
+import Team from "./Team";
 
 const AboutUs = () => {
   return (
     <div className="about">
       <div className="text">About Us</div>
-
       <div className="aboutflex">
         <div className="aboutleft">
           <div className="aboutleftimg">
-            <img src={require("./CSS/forAbout.png")} />
-            <img src={require("./CSS/Aboutbg.png")} />
+            <img src={require("./IMAGES/forAbout.png")} />
+            <img src={require("./IMAGES/Aboutbg.png")} />
           </div>
         </div>
         <div className="aboutright">
@@ -37,6 +37,8 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
+
+      <Team />
     </div>
   );
 };

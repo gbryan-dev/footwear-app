@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useRef } from "react";
 import "../COMPONENT/CSS/Header.css";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isActive, setActive] = useState(false);
@@ -12,20 +13,44 @@ const Header = () => {
     setActive(!isActive);
   };
 
+  const gotoTop = () => {
+    topRef.current.scrollIntoView();
+    setActive(false);
+  };
+
+  const topRef = useRef();
+
   return (
     <>
+      <div ref={topRef}></div>
       <div className={isActive ? "menuconleft openmenu" : "menuconleft"}>
         <div className="menulist">
-          <div onClick={() => setActive(false)}>HOME</div>
-          <div>ABOUT US</div>
-          <div>OUR TEAM</div>
-          <div>PRODUCTS</div>
+          <div>
+            <Link to="/" onClick={gotoTop}>
+              HOME
+            </Link>
+          </div>
+          <div>
+            <Link to="/about" onClick={gotoTop}>
+              ABOUT US
+            </Link>
+          </div>
+          <div>
+            <Link to="/Products" onClick={gotoTop}>
+              CONTACT US
+            </Link>
+          </div>
+          <div>
+            <Link to="/Products" onClick={gotoTop}>
+              PRODUCTS
+            </Link>
+          </div>
         </div>
       </div>
 
       <div className="Header" id="navbar">
         <div className="HeaderLogo">
-          <img src={require("./CSS/Logo2.png")} />
+          <img src={require("./IMAGES/Logo2.png")} />
         </div>
 
         <div class={isActive ? "menuconcp close" : "menuconcp"}>
@@ -44,17 +69,22 @@ const Header = () => {
 
         <div class="nav1">
           <a></a>
-          <a href="#s2">HOME</a>
-          <a href="#s3">ABOUT US</a>
+          <Link to="/" onClick={gotoTop}>
+            HOME
+          </Link>
+          <Link to="/about" onClick={gotoTop}>
+            ABOUT US
+          </Link>
         </div>
 
         <div class="nav2">
-          <a href="#s5" onclick="WhiteCherry()">
-            OUR TEAM
-          </a>
-          <a href="#s4" onclick="opens4sec1();KissTheRain()">
-            PRODUCTS
-          </a>
+          <Link to="/Products" onClick={gotoTop}>
+            ABOUT US
+          </Link>
+
+          <Link to="/Products" onClick={gotoTop}>
+            SHOPPING CART
+          </Link>
           <a></a>
         </div>
       </div>

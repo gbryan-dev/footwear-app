@@ -2,314 +2,380 @@
 
 
 .Header {
-        position: fixed;
-        left: 0px;
-        top: -100px;
-        width: 100%;
-        height: 75px;
-        background: white;
-        z-index: 50;    
-        transition: top 0.6s;
-        transition-delay: .5s;
+  position: fixed;
+  left: 0px;
+  top: -100px;
+  width: 100%;
+  height: 75px;
+  background: white;
+  z-index: 50;
+  text-decoration: none;
+  transition: top 0.6s;
+  transition-delay: .5s;
 }
 
-.HeaderLogo { position: absolute;
-    left: 50%;
-    top: 66%;
-    transform: translate(-50%,-50%);
-    height: 100px;
-    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-    width: 130px; }
+.HeaderLogo {
+  position: absolute;
+  left: 50%;
+  top: 66%;
+  transform: translate(-50%, -50%);
+  height: 100px;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  width: 130px;
+}
 
-    .Header:before { content: '';
-        position: absolute;
-        left: 50%;
-        bottom: -76px;
-        transform: translate(-50%,-50%);
-        width: 230px;
-        height: 85px;
-        clip-path: polygon(50% 100%, 0 40%, 100% 40%);
-        background: white; }
+.Header:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -76px;
+  transform: translate(-50%, -50%);
+  width: 230px;
+  height: 85px;
+  clip-path: polygon(50% 100%, 0 40%, 100% 40%);
+  background: white;
+}
 
-  .HeaderLogo img { margin: 0px; height: 100%; width: 100%; }
+.HeaderLogo img {
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+}
 
-  .moviesicon { position: absolute;
-    right: 10px;
-    top: 52%;
-    transform: translate(-50%,-50%);
-    background: transparent;
-    padding: 0px; 
- 	display: none;}
+.moviesicon {
+  position: absolute;
+  right: 10px;
+  top: 52%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  padding: 0px;
+  display: none;
+}
 
-    .moviesicon i { font-size: 30px;
-    color:#111111;
-    margin: auto; }
-
-  
-.nav1 { position: absolute;
-    left: 30%;
-    top: 40%;
-    transform: translate(-50%,-50%);
-    width: 400px;
-    height: 40px;
-    background: transparent;
-    display: flex;
-    flex-wrap: nowrap;
-     justify-content: center;
-     align-content: center;
-     align-items: center;
-     }
-    
-     .nav1 a { font-size: 20px;
-     color:#111111;
-     font-family: 'Poppins';
-     padding: 10px 20px;
-     font-weight: 300; 
-     margin: auto;
-     position: relative;
-     background: transparent;
-     border-radius: 0px;
-     text-transform: uppercase;
-       letter-spacing: 1px;
-    overflow: hidden;
-      cursor: pointer;
-      text-decoration: none;
-      transition:.4s;
-    }
-    
-     .nav1 a:hover { color:black; text-shadow: 2px 2px 1px #31ff66;}
-      .nav1 a:hover .navanim span:nth-child(1){
-         opacity: 1;
-     }
-     .nav1 a:hover .navanim span:nth-child(2){
-         height: 100%;
-     }
-     .nav1 a:hover .navanim span:nth-child(3){
-         margin-top: 0px; 
-     }
-    .nav1 a:hover .navanim span:nth-child(4){
-         opacity: 1;
-     }
-    
-     .nav2 { position: absolute;
-    left: 70%;
-    top: 40%;
-    transform: translate(-50%,-50%);
-    width: 400px;
-    height: 40px;
-    background: transparent;
-    display: flex;
-    flex-wrap: nowrap;
-     justify-content: center;
-     align-content: center;
-     align-items: center;
-     }
-    
-      .nav2 a { font-size: 20px;
-     color:#111111;
-     font-family: 'Poppins';
-     padding: 10px 20px;
-     font-weight: 300; 
-     margin: auto;
-     position: relative;
-     background: transparent;
-     letter-spacing: 1px;
-     border-radius: 0px;
-     text-transform: uppercase;
-    overflow: hidden;
-    text-decoration: none;
-      cursor: pointer;
-      transition:.4s;}
-    
-    
-    
-     .nav2 a:hover { color: black; text-shadow: 2px 2px 1px #31ff66; }
-    
-     .nav2 a:hover .navanim span:nth-child(1){
-         opacity: 1;
-     }
-     .nav2 a:hover .navanim span:nth-child(2){
-         height: 100%;
-     }
-     .nav2 a:hover .navanim span:nth-child(3){
-         margin-top: 0px; 
-     }
-    .nav2 a:hover .navanim span:nth-child(4){
-         opacity: 1;
-     }
+.moviesicon i {
+  font-size: 30px;
+  color: #111111;
+  margin: auto;
+}
 
 
+.nav1 {
+  position: absolute;
+  left: 30%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 40px;
+  background: transparent;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
 
-     
-    .cartIcon { position: absolute;
-        right: 10px;
-        top: 52%;
-        transform: translate(-50%,-50%);
-        background: transparent;
-        padding: 0px; 
-         display: none;}
-    
-        .cartIcon i { font-size: 30px;
-        color:#111111;
-        margin: auto; }
+.nav1 a {
+  font-size: 20px;
+  color: #111111;
+  font-family: 'Poppins';
+  padding: 10px 20px;
+  font-weight: 300;
+  margin: auto;
+  position: relative;
+  background: transparent;
+  border-radius: 0px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  overflow: hidden;
+  cursor: pointer;
+  text-decoration: none;
+  transition: .4s;
+}
+
+.nav1 a:hover {
+  color: black;
+  text-shadow: 2px 2px 1px #31ff66;
+}
+
+.nav1 a:hover .navanim span:nth-child(1) {
+  opacity: 1;
+}
+
+.nav1 a:hover .navanim span:nth-child(2) {
+  height: 100%;
+}
+
+.nav1 a:hover .navanim span:nth-child(3) {
+  margin-top: 0px;
+}
+
+.nav1 a:hover .navanim span:nth-child(4) {
+  opacity: 1;
+}
+
+.nav2 {
+  position: absolute;
+  left: 70%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 40px;
+  background: transparent;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.nav2 a {
+  font-size: 20px;
+  color: #111111;
+  font-family: 'Poppins';
+  padding: 10px 20px;
+  font-weight: 300;
+  margin: auto;
+  position: relative;
+  background: transparent;
+  letter-spacing: 1px;
+  border-radius: 0px;
+  text-transform: uppercase;
+  overflow: hidden;
+  text-decoration: none;
+  cursor: pointer;
+  transition: .4s;
+}
 
 
 
-     .menuconcp { position: absolute;
-        left: 20px;
-        top: 50%;
-        transform: translate(-50%,-50%); 
-        display: none;}
-        
-        .menu-btn {
-          width: 30px;
-          height: 20px;
-          cursor: pointer; /* Comment this when use on Tablets/Smartphones */
-        }
-        .menu-btn span {
-          position: absolute;
-          background: #111111;
-          width: 100%;
-          height: 15%;
-          transition: .4s .4s top, .4s .4s bottom, .3s transform;
-          border-radius: 100px;
-        }
-        .menu-btn span:nth-of-type(1) {
-          top: 0;
-        }
-        .menu-btn span:nth-of-type(2) {
-          top: 40%;
-          opacity: 1;
-          transition: opacity .1s .4s;
-        }
-        .menu-btn span:nth-of-type(3) {
-          bottom: 0;
-        }
-        
-        /* Animation */
-        .close span {
-          transition: .4s top, .4s bottom, .4s .4s transform;
-        }
-        .close span:nth-of-type(1) {
-          top: 40%;
-          transform: rotate(45deg);
-          background: #31ff66;
-          opacity: 1;
-        }
-        .close span:nth-of-type(2) {
-          opacity: 0;
-          transition: opacity .1s .4s;
-          background: #31ff66;
-        }
-        .close span:nth-of-type(3) {
-          bottom: 40%;
-          transform: rotate(-45deg);
-          background: #31ff66;
-          opacity: 1;
-        }
-        
-        .center {
-          position: absolute;
-          margin: auto;
-          top: 0;
-          right: 0;
-          bottom: 0;
-          left: 0;
-        }
-        
-        
-        .menuconleft { position: fixed;
-        right: 0px;
-        top: 0px;
-        width: 0%; opacity: 0;
-        height: 100%;
-        background: rgba(0,0,0,0.5);
-        backdrop-filter:blur(6px);
-        display: none;
-        z-index: 50;
-        overflow: hidden;
-        transition:1s;
-         }
-        
-         .menulist { position: absolute;
-         left: 50%;
-         top: 55%;
-         transform: translate(-50%,-50%);
-         height: auto;
-         width: 100%; 
-         display: flex;
-         flex-direction: column;
-         flex-wrap: nowrap;
-         justify-content: center;
-         align-items: center;
-         background: transparent; }
+.nav2 a:hover {
+  color: black;
+  text-shadow: 2px 2px 1px #31ff66;
+}
 
-         .menulist div { margin: 10px;
-        width: 150px;
-        padding: 10px;
-        border-radius: 10px;
-        border:2px solid #31ff66;
-        box-shadow: 0px 0px 5px #31ff66;
-        text-align: center;
-        background-color: #111111;
-        color:white;}
-        
-        .openmenu { width: 100%; opacity: 1;}
-        
+.nav2 a:hover .navanim span:nth-child(1) {
+  opacity: 1;
+}
+
+.nav2 a:hover .navanim span:nth-child(2) {
+  height: 100%;
+}
+
+.nav2 a:hover .navanim span:nth-child(3) {
+  margin-top: 0px;
+}
+
+.nav2 a:hover .navanim span:nth-child(4) {
+  opacity: 1;
+}
+
+
+
+
+.cartIcon {
+  position: absolute;
+  right: 10px;
+  top: 52%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  padding: 0px;
+  display: none;
+}
+
+.cartIcon i {
+  font-size: 30px;
+  color: #111111;
+  margin: auto;
+}
+
+
+
+.menuconcp {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.menu-btn {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  /* Comment this when use on Tablets/Smartphones */
+}
+
+.menu-btn span {
+  position: absolute;
+  background: #111111;
+  width: 100%;
+  height: 15%;
+  transition: .4s .4s top, .4s .4s bottom, .3s transform;
+  border-radius: 100px;
+}
+
+.menu-btn span:nth-of-type(1) {
+  top: 0;
+}
+
+.menu-btn span:nth-of-type(2) {
+  top: 40%;
+  opacity: 1;
+  transition: opacity .1s .4s;
+}
+
+.menu-btn span:nth-of-type(3) {
+  bottom: 0;
+}
+
+/* Animation */
+.close span {
+  transition: .4s top, .4s bottom, .4s .4s transform;
+}
+
+.close span:nth-of-type(1) {
+  top: 40%;
+  transform: rotate(45deg);
+  background: #31ff66;
+  opacity: 1;
+}
+
+.close span:nth-of-type(2) {
+  opacity: 0;
+  transition: opacity .1s .4s;
+  background: #31ff66;
+}
+
+.close span:nth-of-type(3) {
+  bottom: 40%;
+  transform: rotate(-45deg);
+  background: #31ff66;
+  opacity: 1;
+}
+
+.center {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+
+.menuconleft {
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  width: 0%;
+  opacity: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(6px);
+  display: none;
+  z-index: 50;
+  overflow: hidden;
+  transition: 1s;
+}
+
+.menulist {
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+
+.menulist div {
+  margin: 10px;
+  width: 150px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #31ff66;
+  box-shadow: 0px 0px 5px #31ff66;
+  text-align: center;
+  background-color: #111111;
+  color: white;
+}
+
+.openmenu {
+  width: 100%;
+  opacity: 1;
+}
+
 
 
 
 /* Animation */
 .close span {
-    transition: .4s top, .4s bottom, .4s .4s transform;
-  }
-  .close span:nth-of-type(1) {
-    top: 40%;
-    transform: rotate(45deg);
-    background: #28c9a6;
-    opacity: 1;
-  }
-  .close span:nth-of-type(2) {
-    opacity: 0;
-    transition: opacity .1s .4s;
-    background: #28c9a6;
-  }
-  .close span:nth-of-type(3) {
-    bottom: 40%;
-    transform: rotate(-45deg);
-    background: #28c9a6;
-    opacity: 1;
-  }
-  
-  .center {
-    position: absolute;
-    margin: auto;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
+  transition: .4s top, .4s bottom, .4s .4s transform;
+}
 
+.close span:nth-of-type(1) {
+  top: 40%;
+  transform: rotate(45deg);
+  background: #28c9a6;
+  opacity: 1;
+}
 
+.close span:nth-of-type(2) {
+  opacity: 0;
+  transition: opacity .1s .4s;
+  background: #28c9a6;
+}
 
+.close span:nth-of-type(3) {
+  bottom: 40%;
+  transform: rotate(-45deg);
+  background: #28c9a6;
+  opacity: 1;
+}
 
-
-
-
-
-
-
-     /*SMALLPHONE*/
-@media (max-width: 600px) {
-
-.menuconleft { display: block;}
-    .cartIcon { display: block;}
-     .menuconcp { display: block; }
- .nav1 { display: none; }
- .nav2 { display: none; }
+.center {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 
 
-    
-    
+
+
+
+
+
+
+
+/*SMALLPHONE*/
+@media (max-width: 600px) {
+
+  .menuconleft {
+    display: block;
+  }
+
+  .cartIcon {
+    display: block;
+  }
+
+  .menuconcp {
+    display: block;
+  }
+
+  .nav1 {
+    display: none;
+  }
+
+  .nav2 {
+    display: none;
+  }
+}
