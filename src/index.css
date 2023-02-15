@@ -2,13 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Kameron&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
   user-select: none;
 }
+
+button { outline: none;}
 
 
 body {
@@ -80,6 +82,9 @@ section {
   padding-left: 40px;
   padding-right: 20px;
 }
+
+input {     font-family: 'Inter';
+  font-weight: 500;}
 
 .shopnow {
   margin: 10px auto;
@@ -350,4 +355,206 @@ section {
   .back { height: 580px;}
 
   .textCenter { margin-top: 0px;}
+}
+
+
+.ProdFlex {
+  margin: auto;
+  margin-bottom: 50px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  justify-content: center; align-items: center;
+}
+
+.ProdCon { margin:30px auto;
+  margin-bottom: 40px;
+  width: 23%;
+  height: 350px;
+  background-color: #ffffff;
+  position: relative;
+  cursor: pointer;
+  border-radius: 10px;
+  text-align: center;
+  font-family: 'Poppins';
+}
+
+.ProdBottom { position: absolute;
+  left: 0px;
+  bottom: -10px;
+  height: 50%;
+  width: 100%;
+  background-color: #31ff77;
+  border-radius: 30px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  
+}
+
+.ProdRoundFlex {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%,0px);
+  height: 35px;
+  width: 68%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* 
+.prodrod1 { position: absolute;
+  top:0px;
+   left: "0px" }
+.prodrod2 { position: absolute;
+  top:0px;
+   right: "0px"} */
+
+.ProdRoundFlex div { margin-top: 5px;
+  height: 40px;
+  width: 40px;
+  background: white;
+  position: relative;
+}
+
+.ProdRoundFlex div:first-child{
+  margin-right: 27px; 
+}
+
+.ProdRoundFlex div:nth-child(2){
+  margin-left: 27px; 
+}
+
+
+
+.ProdRoundFlex div:first-child:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top:0px;
+  height: 100%;
+  width: 100%;
+  background-color: #31ff77;
+  border: none;
+  border-top-right-radius: 19px;
+}
+
+.ProdRoundFlex div:nth-child(2):before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top:0px;
+  height: 100%;
+  width: 100%;
+  background-color: #31ff77;
+  border: none;
+  border-top-left-radius: 19px;
+}
+
+
+
+
+
+
+
+  .plus { 
+    position: absolute;
+    left: 50%;
+    top: -26px;
+    transform: translate(-50%, 0px);
+    height: 50px;
+    width: 50px;
+    background-color: #31ff77;
+    border: 1px solid transparent;
+    outline:6px solid #ffffff;
+    border-radius: 100%;
+    text-align: center;
+    padding-top: 13px;
+    }
+  
+    .plus i { font-size: 25px; color: #111111;
+      transition: .5s;
+    }
+
+    button.plus{
+      background-color: #31ff77;
+      
+    }
+  
+   .plus:hover i{ transform: rotate(20deg); color: #111111;
+   }
+
+      .plus:focus { 
+      border:6px solid #ffffff;
+      outline: transparent} 
+
+  .ProdFeatured { margin: -85px auto;
+    height: auto;
+    width: 100%;
+    animation: float 4s ease-in-out infinite;
+}
+  
+  img { margin: 0px; height: 100%; width: 100%;}
+
+  .ProdName { margin: 45px auto; margin-bottom: 0px; width: 100%; color: #111111; 
+    font-size: 20px;
+    white-space: nowrap;
+    font-weight: 800;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+
+    
+  .ProdPrice { margin: 0px auto; width: 100%; color: #111111;
+    font-size: 20px;
+  }
+
+    .ProdPrice span { font-family: 'Kameron';}
+
+    .ProdBtn { margin: 10px auto; display: flex; width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+
+    
+
+    .ProdBtn div { margin-right: 10px; transition: .1s;}
+    .ProdBtn div:hover { font-weight: 600; text-transform: uppercase;}
+
+    .ProdBtn div:nth-child(2) { padding: 5px 10px; background-color: #111111;
+       color: white; 
+       border-radius: 5px;
+       border: 2px solid transparent;
+       transition: .1s;}
+
+       .ProdBtn div:nth-child(2):hover { border: 2px solid #31ff77; outline: 2px solid #111111;}
+
+
+.myqty { opacity: 0;  margin: auto; width: 0%; display: flex; font-family: "Poppins";
+  font-size: 16px; overflow: hidden; font-weight: 500; justify-content: center; align-items: center;}
+
+  .myqty input { margin-right:5px; margin-left:5px;
+     padding: 2px; height:30px; width:50px;
+      border: none; outline: none;
+    }
+
+  .myqty span:hover { text-transform: uppercase;}
+
+  .myqty input::-webkit-input-placeholder { /* Edge */
+    color: #111111;
+  }
+  
+  .myqty input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #111111;
+  }
+  
+  .myqty input::placeholder {
+    color: #111111;
+  }
+
+  input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+display: none
+
 }

@@ -86,33 +86,6 @@ const Team = () => {
 
   return (
     <div className="ourteam">
-      <Button onClick={() => setOpen(true)}>Open simple snackbar</Button>
-      <Snackbar
-        open={open}
-        onClose={() => setOpen(false)}
-        autoHideDuration={3000}
-        message="Note archived"
-        severity="error"
-        anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
-        style={{ background: "#111111" }}
-      >
-        <Alert
-          severity="success"
-          style={{
-            background: "#31ff66",
-            boxShadow: "0px 0px 10px #31ff66",
-            color: "#111111",
-            fontFamily: "Poppins",
-            fontWeight: "600",
-            border: "2px solid #111111",
-            borderRadius: "5px",
-            cursor: "pointer",
-          }}
-        >
-          ITEM ADDED TO CART
-        </Alert>
-      </Snackbar>
-
       <div className="text">Our Team</div>
       <div className="teamflex">
         <div className="teams">

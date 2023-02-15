@@ -1,8 +1,11 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import "../COMPONENT/CSS/Header.css";
-import { Link } from "react-router-dom";
+import { NavLink, Link, useLocation, useNavigate } from "react-router-dom";
 
 const Header = () => {
+  const location = useLocation();
+  const navI = useNavigate();
+
   const [isActive, setActive] = useState(false);
   if (isActive) {
     document.body.style.overflowY = "hidden";
@@ -14,35 +17,45 @@ const Header = () => {
   };
 
   const gotoTop = () => {
-    topRef.current.scrollIntoView();
     setActive(false);
   };
 
-  const topRef = useRef();
+  const [getEmailLocal, setEmaiLocal] = useState(localStorage.getItem("Email"));
+  const [getGender, setGender] = useState(localStorage.getItem("Gender"));
+
+  useEffect(() => {
+    setEmaiLocal(localStorage.getItem("Email"));
+    setGender(localStorage.getItem("Gender"));
+
+    if (getEmailLocal === "g2@admin.com") navI("/Profile");
+  }, [location]);
 
   return (
     <>
-      <div ref={topRef}></div>
       <div className={isActive ? "menuconleft openmenu" : "menuconleft"}>
         <div className="menulist">
           <div>
-            <Link to="/" onClick={gotoTop}>
+            <Link onClick={gotoTop} to="/">
               HOME
             </Link>
           </div>
           <div>
-            <Link to="/about" onClick={gotoTop}>
+            <Link onClick={gotoTop} to="/about">
               ABOUT US
             </Link>
           </div>
           <div>
-            <Link to="/Products" onClick={gotoTop}>
-              CONTACT US
+            <Link onClick={gotoTop} to="/Products">
+              PRODUCTS
             </Link>
           </div>
           <div>
-            <Link to="/Products" onClick={gotoTop}>
-              PRODUCTS
+            <Link
+              onClick={gotoTop}
+              state={{ goto: "/Profile", getEmailLocal }}
+              to={getEmailLocal === null ? "/SignInUp" : "/Profile"}
+            >
+              PROFILE
             </Link>
           </div>
         </div>
@@ -62,28 +75,32 @@ const Header = () => {
         </div>
 
         <div class="cartIcon">
-          <a href="MYMOVIES.html">
+          <Link to={getEmailLocal === null ? "/SignInUp" : "/Profile"}>
             <i class="fa-solid fa-cart-shopping"></i>
-          </a>
+          </Link>
         </div>
 
         <div class="nav1">
           <a></a>
-          <Link to="/" onClick={gotoTop}>
+          <Link onClick={gotoTop} to="/">
             HOME
           </Link>
-          <Link to="/about" onClick={gotoTop}>
+          <Link onClick={gotoTop} to="/about">
             ABOUT US
           </Link>
         </div>
 
         <div class="nav2">
-          <Link to="/Products" onClick={gotoTop}>
-            ABOUT US
+          <Link onClick={gotoTop} to="/Products">
+            PRODUCTS
           </Link>
 
-          <Link to="/Products" onClick={gotoTop}>
-            SHOPPING CART
+          <Link
+            onClick={gotoTop}
+            state={{ goto: "/Profile", getEmailLocal }}
+            to={getEmailLocal === null ? "/SignInUp" : "/Profile"}
+          >
+            PROFILE
           </Link>
           <a></a>
         </div>

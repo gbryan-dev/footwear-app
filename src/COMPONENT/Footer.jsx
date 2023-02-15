@@ -38,14 +38,14 @@ const Footer = () => {
                     name="myDate"
                     required
                     value={new Date().toLocaleDateString().toString()}
-                    spellcheck="false"
+                    spellCheck="false"
                   />
                   <input
                     type="text"
                     name="Time"
                     required
                     value={new Date().toLocaleTimeString()}
-                    spellcheck="false"
+                    spellCheck="false"
                   />
                 </div>
                 <input
@@ -56,7 +56,6 @@ const Footer = () => {
                   disabled={isDis}
                   placeholder="your@email.com"
                   class="text-white w-full bg-transparent py-3 pl-3 pr-20 border-2 border-solid border-green-500 rounded-0 outline-none placeholder:text-white/50"
-                  required
                 />
                 <button
                   onClick={Subsmit}
