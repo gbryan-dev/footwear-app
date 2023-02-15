@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 
 .MyCart { margin: 0px auto;
     margin-bottom: 0px;
@@ -8,17 +8,4 @@
     max-width: 1200px;
     overflow-x: hidden;
     }
-
-=======
-
-.MyCart { margin: 0px auto;
-    margin-bottom: 0px;
-    padding-top: 150px;
-    height: auto;
-    width: 100%;
-    max-width: 1200px;
-    overflow-x: hidden;
-    }
-
->>>>>>> c24bc2d8cf9eb4d7d51377ab06782ceb8435e838
 button:focus { border: none; outline: none;}
