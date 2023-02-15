@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Kameron&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Squada+One&display=swap');
+.logoImg { margin: 30px auto;
+height: 230px;
+animation: floating 6s linear infinite;
+width: 250px;}
+
+.logoImg img { margin: 0px; height: 100%; width: 100%;}
+
+.formapp {
+    position: fixed;
+    left: 0px;
+    top:0px;
+  height: 100%;
+  width: 100%;
+  background-color: #111111;
+  justify-content: center;
+z-index: 9999999999; }
+
+.Username { font-family: 'Squada One';
+font-size: 40px;
+margin-top: -90px;
+text-transform: uppercase;
+}
+
+
+input {     font-family: 'Inter';
+  font-weight: 500;}
+
+
+.genderCon { margin-top: 0px;
+  margin-bottom: 10px;
+width: 100%;
+height: 50px;
+background-color: white;
+border-radius: 5px;
+position: relative;
+}
+
+.genderCon #gender {
+  position: absolute;
+  right: 4px;
+  top: 8px;
+  color: #111111;
+}
+
+.genderCon span:first-child  {
+  position: absolute;
+  left: 15px;
+  top: 12px;
+  color: #AAAAAA;
+  font-weight: 300; 
+  font-size: 1rem;
+    font-family: 'Inter';
+    font-weight: 500;
+  
+}
+
+
+.concon {
+     position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%,-50%);
+    margin: auto;
+  text-align: center;
+  color: #fff;
+  height: auto;
+  width: 500px; }
+
+  .concon > header {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0 auto 60px auto;
+    position: relative;
+    height: 25px;
+    width: 250px;
+    overflow: hidden; }
+
+.header-headings {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  transition: all 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86); }
+  .header-headings > span {
+    margin: 3px 0;
+display: none; }
+    
+  .header-headings.sign-in {
+    transform: translateY(-10px); }
+  .header-headings.sign-up {
+    transform: translateY(-50px); }
+  .header-headings.forgot {
+    transform: translateY(-50px); }
+
+.options {
+  display: flex;
+  align-items: center;
+  width: 100%; }
+  @media screen and (max-width: 380px) {
+    .options {
+      width: 100%; } }
+  .options > li {
+    cursor: pointer;
+    opacity: .5;
+    transition: all .2s ease; }
+    .options > li:hover {
+      opacity: 1; }
+    .options > li.active {
+      opacity: 1; }
+    .options > li:nth-of-type(2) {
+      margin-left: 15px; }
+    .options > li:last-of-type {
+      margin-left: auto; }
+
+.account-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px; }
+
+.account-form-fields {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86); }
+
+  
+  
+.warning i { text-align: center; color:red;
+    width: 60px;
+    font-size: 30px;}
+
+  .warning { position: absolute;
+    right: 0px;
+    z-index: 55;
+    height: 52px;
+    cursor: pointer;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: white;
+    padding-top: 10px;
+}
+    .warning1 { 
+        top:2px;}
+
+    .warning2 { 
+        top:65px;
+    }
+
+    .warning3 { 
+        top:130px;
+    }
+    
+       
+        #gender { display: flex; justify-content: center; align-items: center;
+        margin-top: 5px; margin-bottom: 20px;}
+        #gender div { width: auto; text-align: center;  display: flex; justify-content: center; align-items: center; 
+        font-family: 'Inter'; font-weight: 400; margin-left: 10px; margin-right: 10px;}
+        #gender input { height: 20px; width: 20px; cursor: pointer; margin-right: 5px; margin-top: 0px;
+          
+          border-radius: 15px;
+          top: -2px;
+          left: -1px;
+          position: relative;
+          background-color: #d1d3d1;
+          content: '';
+          display: inline-block;
+          visibility: visible;
+          border: 2px solid white;}
+
+          #gender  input[type='radio']:checked:after {
+            width: 20px;
+            height: 20px;
+            border-radius: 100%;
+            top: 0px;
+            left: 0px;
+            position: relative;
+            background-color: #31ff77;
+            content: '';
+            display: inline-block;
+            visibility: visible;
+            border: 2px solid #111111;
+        }
+
+        #gender span { margin-top: -3px;}
+
+
+
+  .account-form-fields.sign-in {
+    max-height: 123px; }
+  .account-form-fields.sign-up {
+    max-height: 250px; }
+  .account-form-fields.forgot {
+    max-height: 61px; }
+  .account-form-fields > input {
+    border: 0;
+    position: relative;
+    margin-bottom: 10px;
+    padding: 15px;
+    font-size: 1rem;
+    
+     font-family: 'Inter';
+  font-weight: 500;
+    color: #000;
+    border-radius: 5px; }
+
+
+    .account-form-fields > input::placeholder {
+      color: #aaa; }
+    .account-form-fields > input::-webkit-input-placeholder {
+      color: #aaa; }
+    .account-form-fields > input:-ms-input-placeholder {
+      color: #aaa; }
+    .account-form-fields > input:focus {
+      outline: none; 
+    }
+
+.btn-submit-form {
+  border: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  padding: 15px 0;
+  border-radius: 5px;
+  color: #111111;
+  font-size: 1rem;
+  font-family: "Poppins";
+  font-weight: 600;
+  text-transform: uppercase;
+  background: #31ff77;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.13);
+  transition: all .2s ease; }
+  .btn-submit-form:hover {
+    background: #31ff77; }
+  .btn-submit-form:active, .btn-submit-form:focus {
+    outline: none;
+    background: #31ff77; }

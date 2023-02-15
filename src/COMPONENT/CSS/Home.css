@@ -93,13 +93,9 @@ background-color: #111111;
 flex-wrap: wrap;
   }
 
-  .swiperCon {
-    margin-top:10px;
-    margin-right:auto;
-    width: 23%;
-    height: 340px;
-    background-color: #19181a;
-  }
+
+
+
 
 
   span.swiper-pagination-bullet.swiper-pagination-bullet-active {

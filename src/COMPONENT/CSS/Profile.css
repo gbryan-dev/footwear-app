@@ -1,0 +1,11 @@
+
+.MyCart { margin: 0px auto;
+    margin-bottom: 0px;
+    padding-top: 150px;
+    height: auto;
+    width: 100%;
+    max-width: 1200px;
+    overflow-x: hidden;
+    }
+
+button:focus { border: none; outline: none;}
