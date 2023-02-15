@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .ourteam { margin: 0px auto;
     margin-bottom: 0px;
     height: auto;
@@ -363,4 +364,371 @@ transition: .2s;
     .teams{ height: 260px; width: 100%;}
     .choose { width: 90%;}
     .whyChooseUs p { width:90%; text-align: left;}
+=======
+.ourteam { margin: 0px auto;
+    margin-bottom: 0px;
+    height: auto;
+    width: 100%;
+    max-width: 1200px;
+    }
+
+    
+
+.teamflex { margin: 0px auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;}
+
+.teams { margin: auto;
+height: 400px; width: 45%;
+animation: float 6s ease-in-out infinite;}
+
+.teams img { margin: 0px; height: 100%; width: 100%; }
+
+.whyChooseUs p { margin: auto;
+    text-align: center;
+color:white;
+font-family: 'Poppins';
+font-weight:200;
+width: 50%;
+}
+
+.chooseFlex { margin: 50px auto; display: flex; width: 100%; height: auto;
+flex-wrap: wrap; justify-content: center; align-items: center;}
+
+.choose { margin: 0px auto; 
+     height:300px; max-height: 300px;width: 24%;
+    max-width: 300px; 
+    position: relative;
+    margin-bottom: 40px;
+    background-color: #19181a;}
+
+.vidCenter { margin: auto; height: 300px; max-height: 300px; width:100%; padding-bottom: 30px; }
+.vidCenter video { margin: 20px auto; height: 100%; width:100%; 
+   }
+
+.vidTitle { position: absolute;
+left: 0px;
+bottom: 5px;
+width: 100%;
+height: 50px;
+color:white;
+padding-top:0px;
+font-family: 'Poppins';
+font-size: 20px;
+text-align: center;}
+
+
+
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+
+
+.partners { width: 100%; height: auto; 
+    display: flex;
+    flex-direction: row;
+}
+
+
+.container {
+    background: white;
+    color: #636e72;
+}
+.header {
+    height: 60px;
+    background: #22264b;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+}
+.header .logo {
+    text-transform: uppercase;
+}
+.nav ul li {
+    display: inline-block;
+    padding: 5px;
+}
+.nav ul li:last-child {
+    padding-right: 0;
+}
+.nav ul li a {
+    display: block;
+    cursor: pointer;
+}
+.hero {
+    height: 420px;
+    background: #22264b;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-button {
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: white;
+    background: #b56969;
+    cursor: pointer;
+    padding: 25px 80px;
+    display: inline-block;
+    margin: 15px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.hero-button:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.hero-button:hover {
+    box-shadow: 0 4px #9d4e4e;
+}
+.hero-button:active {
+    box-shadow: 0 0 #ab3c3c;
+    -webkit-transform: translate3d(0, 2px, 0);
+    -moz-transform: translate3d(0, 2px, 0);
+}
+@-webkit-keyframes slideleft {
+    0% {
+        background-position: 385000px;
+   }
+    100% {
+        background-position: 0;
+   }
+}
+@keyframes slideleft {
+    0% {
+        background-position: 385000px;
+   }
+    100% {
+        background-position: 0;
+   }
+}
+.partners-img-container {
+    height: 100px;
+    width: 100%;
+    overflow: auto;
+}
+.partners-img-container::-webkit-scrollbar {
+    width: 0 !important;
+}
+/* hide scrollbar in Chrome */
+.partners-img-container {
+    scrollbar-width: none;
+}
+/* hide scrollbar in mozilla */
+.partners-img-container {
+    -ms-overflow-style: none;
+}
+/* hide scrollbar in IE */
+.partners-img-container .partners-img {
+    height: 100%;
+    width: 200%;
+    background: transparent url("../IMAGES/Partners.png") repeat-x 50% 0;
+    -webkit-animation: slideleft 5000s linear infinite;
+    animation: slideleft 5000s linear infinite;
+    cursor: grab;
+}
+
+.ContactUS { 
+    margin: 50px auto;
+height: auto;
+width: 100%;
+background-color: #19181a;
+border-radius: 20px;
+box-shadow: 0px 0px 10px #19181a;
+display: flex;
+flex-wrap: wrap;
+padding: 50px;
+}
+
+.ContactLeft {
+    margin: auto;
+    height: 500px;
+    width: 60%;
+    font-family: 'Poppins';
+    
+}
+
+.ContactLeft span { font-size: 30px; font-weight: 500;
+color: white;}
+
+.ContactLeft p { padding-top: 20px; padding-bottom: 0px; 
+    font-size: 20px; color: white; width: 60%;
+font-weight: 200; font-family: 'Inter';}
+
+
+
+.contactsR div { margin-top: 8px;
+margin-bottom: 0px;
+height: 50px;
+border-radius: 10px;
+background:transparent;
+border: 2px solid transparent;
+padding: 10px;
+padding-left: 20px;
+padding-top: 12px;
+font-size: 17px;
+font-family: "Poppins";
+font-weight: 300;
+color:white;
+cursor: pointer;
+transition: .2s;
+}
+
+.contactsR div:hover { 
+    background:rgba(49, 255, 102, .1);
+    border: 2px solid #31ff66;}
+
+.contactsR div i { color: #31ff66; padding-right: 10px;}
+
+.ContactRight {
+    margin: auto;
+    height: 500px;
+    width: 40%;
+    background-color: #111111;
+    border-radius: 20px;
+    position: relative ;
+}
+
+.socMed { margin-top: 60px;
+margin-bottom: 0px;
+margin-left: -20px;
+width: 270px;
+height: auto;
+display: flex;
+flex-wrap: nowrap;
+}
+
+.socMed div { margin: auto;
+height: 60px;
+width: 60px;
+border-radius: 100%;
+background:transparent;
+border: 2px solid transparent;
+position: relative;
+cursor: pointer;
+color:white;
+animation: float 5s infinite;
+transition: .2s;
+}
+
+.socMed div:nth-child(2){
+    animation-delay: .2s;
+}
+
+.socMed div:hover { background:#31ff66;
+    color: #111111;
+    box-shadow: 0px 0px 5px #31ff66;
+    border: 2px solid #111111}
+
+.socMed div i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.contactsR { margin-top: 50px;
+    margin-bottom: 0px;
+    width: 300px;
+    height: auto;
+    }
+
+
+    .ContactRight {
+        margin: auto;
+        height: 500px;
+        width: 40%;
+        background-color: #F2F3F5 ;
+        border-radius: 20px;
+        padding:30px;
+    }
+    .ContactRight div { color: #111111; font-family: 'Inter';
+    font-weight: 500; margin-bottom: 5px;}
+    
+    .contactform {
+        position: relative;
+        display: flex;
+        height: 100%;
+        flex-direction: column;}
+
+    .contactform input, .contactform textarea { 
+        color: #111111;
+        font-family: 'Inter';
+    font-weight: 500;
+        width: 100%; 
+    height: 40px;
+    background-color: transparent;
+    border: 1.7px solid rgb(200, 200, 200);
+    padding-left: 10px;
+    padding-top: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+    }
+
+    .contactform textarea { max-height: 140px; min-height: 140px;
+    overflow-y: hidden;
+    }
+
+    .contactform textarea:hover { overflow-y: auto;}
+
+
+    .contactform label { margin-bottom: 20px;}
+
+    .contactform input:focus, .contactform textarea:focus {
+        background:rgba(49, 255, 102, .5);
+        border: 2px solid #111111;
+    }
+
+    .contactform button {  position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 200px;
+    height: 50px;
+    background:#19181a;
+    border: 2px solid #31ff66;
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 500;
+    border-radius: 10px;
+    }
+
+
+
+
+/* PHONE */
+@media (max-width: 600px) {
+    .teams{ height: 260px; width: 100%;}
+    .choose { width: 90%;}
+    .whyChooseUs p { width:90%; text-align: left;}
+>>>>>>> c24bc2d8cf9eb4d7d51377ab06782ceb8435e838
 }

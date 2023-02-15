@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -184,4 +185,192 @@ margin-bottom: 50px;
    .forCP { display: block;}
    .Bundle { height: 550px;}
    .Bundle div { display: none; }
+=======
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.newsletter { margin: auto; height: 400px; width: auto; background-color: transparent;
+padding-top: 70px;}
+
+.Featured { margin: 160px auto;
+margin-bottom: 60px;
+height:450px;
+width: 100%;
+max-width: 1200px;
+display: flex;
+}
+
+
+.featLeft {
+    margin: auto;
+    height: 100%;
+    width: 60%;
+    transition: .3s;
+}
+
+.featLeft:hover img { transform: scale(1.05); cursor: pointer;}
+.featRightCon div:hover img { transform: scale(1.05); cursor: pointer;}
+.featRightCon:hover img { transform: scale(1.05); cursor: pointer;}
+
+.featRight {
+    margin: auto;
+    height: 100%;
+    width: 40%;
+    background-color: transparent;
+    padding-left:5px;
+    padding-right:5px;
+}
+
+.featRightCon {
+    margin: auto;
+    margin-bottom: 10px;
+    width: 98%;
+    height: 49%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.featRightCon div {  height:100%; width: 49%; background-color: #19181a;
+}
+
+.featRightCon div:nth-child(1){ margin-right: 10px;}
+
+img { margin: auto; height: 100%; width: 100%; 
+  transition: .3s;}
+
+
+.Label { margin: auto;
+font-family: 'Poppins';
+font-weight: 300;
+color: white;
+font-size: 25px;
+height:auto;
+margin-bottom: 10px;
+width: 100%;
+max-width: 1200px;
+display: flex;
+ justify-content: space-between;
+}
+
+
+
+.prevNext {  
+   display: flex; height: 100%;}
+.prevNext div { 
+    cursor: pointer;
+    padding-top: 3px;
+    margin: auto 5px; height: 100%; width:49%; border: none; outline: none;}
+
+    .prevNext div i { font-size: 30px;}
+.prevNext div:hover { color: #31ff66}
+
+
+.swiper {
+margin-top: 0px;
+margin-bottom: 50px;
+height:auto;
+width: 100%;
+max-width: 1200px;
+display: flex;
+justify-content: start;
+align-items: flex-start;
+padding-top:10px;
+background-color: #111111;
+flex-wrap: wrap;
+  }
+
+
+
+
+
+
+  span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #31ff66;
+    opacity: 1;
+  }
+  
+  /* target all bullets */
+  .swiper-pagination-bullet {
+    background-color: white;
+    opacity: 1;
+  }
+
+  .reviewsCon {
+    margin-top:10px;
+    margin-right:auto;
+    width: 49%;
+    cursor: grab;
+    height: 340px;
+    background-color: #19181a; }
+
+  .swiperCon:last-child { margin-right: 0px;}
+
+  
+  .swiper-slide {
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: start;
+    justify-content: start;
+    -webkit-box-align: center;
+    -ms-flex-align: start;
+    -webkit-align-items: start;
+    align-items: start;
+    
+    flex-wrap: wrap;
+  }
+  
+  .Bundle {
+    margin: auto;
+    height:auto;
+width: 100%;
+max-width: 1200px;
+display: flex;
+margin-bottom: 50px;
+
+   }
+
+   .Bundle div { display: block;margin: 0px; height: 450px; width: 50%;}
+   .Bundle div:nth-child(3){ cursor: pointer;}
+
+   .forCP { display: none;}
+
+
+
+
+
+            
+   .btn-seeAll {
+    margin: auto;
+   width: 200px;
+   padding: 10px;
+   color:#31ff66;
+   font-weight: 500;
+   text-align: center;
+   border-bottom: 2px solid #31ff66;
+   text-transform: uppercase;
+   cursor: pointer;
+   margin-bottom: 40px;
+   border: 2px solid #31ff66;
+   box-shadow: 0px 0px 10px #31ff66;
+   
+  }
+
+ 
+
+
+   
+/* PHONE */
+@media (max-width: 600px) {
+   .forCP { display: block;}
+   .Bundle { height: 550px;}
+   .Bundle div { display: none; }
+>>>>>>> c24bc2d8cf9eb4d7d51377ab06782ceb8435e838
 }
